@@ -53,7 +53,8 @@ Or
 ```sh
 (home)$curl -X GET "http://127.0.0.1:8080/api/v1/create-token"
 ```
-##Response
+
+## Response
 
 {
     "Token": "f57b53eadf1e617bc7129160f642b75b6c32dcf9"
@@ -64,7 +65,8 @@ Or
 ```sh
 (home)$ curl -X POST 'http://127.0.0.1:8080/api/v1/assign-token' -d '{"username":"tejendra"}'
 ```
-##Response:
+
+## Response:
 {
     "Token": "f57b53eadf1e617bc7129160f642b75b6c32dcf9"
 }
@@ -74,7 +76,8 @@ Or
 ```sh
 (home)$ curl -X POST 'http://127.0.0.1:8080/api/v1/unblock-token' -d '{"username":"tejendra","Token":"f57b53eadf1e617bc7129160f642b75b6c32dcf9"}'
 ```
-##Response:
+
+## Response:
 {
     "Unblock-Token": "f57b53eadf1e617bc7129160f642b75b6c32dcf9"
 }
@@ -84,7 +87,8 @@ Or
 ```sh
 (home)$ curl -X POST 'http://127.0.0.1:8080/api/v1/remove-token' -d '{"username":"tejendra","Token":"f57b53eadf1e617bc7129160f642b75b6c32dcf9"}'
 ```
-##Response:
+
+## Response:
 {
     "Removed-Token": "f57b53eadf1e617bc7129160f642b75b6c32dcf9"
 }
@@ -94,7 +98,8 @@ Or
 ```sh
 (home)$ curl -X POST 'http://127.0.0.1:8080/api/v1/keep-alive-token' -d '{"username":"tejendra","Token":"f57b53eadf1e617bc7129160f642b75b6c32dcf9"}'
 ```
-##Response:
+
+## Response:
 {
     "Keep-Alive-Token": "f57b53eadf1e617bc7129160f642b75b6c32dcf9"
 }
