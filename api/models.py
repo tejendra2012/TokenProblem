@@ -1,3 +1,9 @@
+'''
+    @Author: Tejendra Singh Kushwah
+    @Copyright: Copyright (C) 2021 Tejendra Singh Kushwah
+    @Version: 1.0
+'''
+
 from django.db import models
 
 # Create your models here.

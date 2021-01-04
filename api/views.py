@@ -1,3 +1,9 @@
+'''
+    @Author: Tejendra Singh Kushwah
+    @Copyright: Copyright (C) 2021 Tejendra Singh Kushwah
+    @Version: 1.0
+'''
+
 from django.shortcuts import render
 
 # Create your views here.
@@ -55,7 +61,7 @@ class AssignTokenView(APIView):
 		if 'username' not in request_data:
 			return Response({'detail':'username parameter is missing'},status=status.HTTP_400_BAD_REQUEST)
 		username = request_data['username']
-		if r.exists(username):
+                if r.exists("releaseKey:"+username):
 			tokenData = r.get(username)
 			updateObj = Token.objects.get(token=tokenData)
 			updateObj.activate = True
